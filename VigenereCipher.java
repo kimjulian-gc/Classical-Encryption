@@ -11,7 +11,8 @@ public class VigenereCipher {
 
     String instruction = args[0].toLowerCase();
 
-    if (!(instruction.equals("encode") || instruction.equals("decode"))){
+    if (!(instruction.equals("encode")
+        || instruction.equals("decode"))){
       err.println("Valid options are \"encode\" or \"decode\"");
       System.exit(1);
     }
