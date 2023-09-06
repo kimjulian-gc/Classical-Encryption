@@ -6,6 +6,14 @@
   "configurations": [
     {
       "type": "java",
+      "name": "VigenereCipher",
+      "request": "launch",
+      "mainClass": "VigenereCipher",
+      "projectName": "Assignment 1 - Classical Encryption_16b53ac6",
+      "args": "${command:SpecifyProgramArgs}"
+    },
+    {
+      "type": "java",
       "name": "Launch with Arguments Prompt",
       "request": "launch",
       "mainClass": "",
