@@ -28,7 +28,7 @@ public class CaesarCipher {
   }
 
   public static String xcode(String msg, int n, int fixN) {
-    char[] toTransform = msg.toLowerCase().toCharArray();
+    char[] toTransform = msg.toCharArray();
 
     for (int i = 0; i < toTransform.length; i++) {
       toTransform[i] = numToAlpha(rebaseChar(toTransform[i]) + (n * fixN));
@@ -42,6 +42,9 @@ public class CaesarCipher {
   }
 
   public static char numToAlpha(int n) {
-    return (char) (Math.abs(n % 26) + (int) 'a');
+    int modN = n % 26;
+    if (modN < 0) modN = 26 + modN;
+
+    return (char) (modN + (int) 'a');
   }
 }
