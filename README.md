@@ -6,3 +6,6 @@ This project includes my work for [MP01: Classical Encryption](https://rebelsky.
 
 # Resources used
 - None
+
+# Future thoughts
+- Honestly, there's a lot of repeated code between each cipher program. Probably could abstract it out to a Cipher program then just extend and override. Out of scope for this class project though!
